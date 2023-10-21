@@ -4,7 +4,7 @@ $(document).ready(function(){
     url:"json/自傳.json",
     success:function(result){
       for(let i=0;i<result.length;i++){
-        the_history.innerHTML+="<div class='The_history'></div><div class='theme' id='"+result[i]['id']+"'><h4 class='theme_title'>"+result[i]['主題']+"</h4><img class='about_img scent' src='"+result[i]['圖片']+"'</img><div class='family_text'>"+result[i]['內容']+"</div></div></div>";
+        the_history.innerHTML+="<div class='The_history'></div><div class='theme' id='"+result[i]['id']+"'><h4 class='theme_title'>"+result[i]['主題']+"</h4><img class='about_img scent' src='"+result[i]['圖片']+"'</img><div class='family_text'><p>"+result[i]['內容']+"</p></div></div></div>";
       }
     }  
   });
